@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sample_aggrid_ns="http://www.convertigo.com/convertigo/projects/sample_aggrid" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/sample_aggrid">
+    <xsd:element name="HTTP_connector__getData" type="sample_aggrid_ns:HTTP_connector__getDataRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="HTTP_connector__getDataResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="sample_aggrid_ns:HTTP_connector__getDataResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="HTTP_connector__getDataResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="sample_aggrid_ns:HTTP_connector__getDataResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector__getDataRequestData">
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributes_describeUrlType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributes_instancesUrlType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributes_reportIdType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributes_reportNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributes_typeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_attributesType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="describeUrl" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributes_describeUrlType"/>
+            <xsd:element minOccurs="0" name="instancesUrl" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributes_instancesUrlType"/>
+            <xsd:element minOccurs="0" name="reportId" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributes_reportIdType"/>
+            <xsd:element minOccurs="0" name="reportName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributes_reportNameType"/>
+            <xsd:element minOccurs="0" name="type" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributes_typeType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_allDataType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_object_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_object_labelType"/>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_object_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_aggregatesType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_aggregates_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_recordIdType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_value_amountType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_value_currencyType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_valueType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="amount" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_value_amountType"/>
+            <xsd:element minOccurs="0" name="currency" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_value_currencyType"/>
+        </xsd:sequence>
+        <xsd:attribute default="string" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_labelType"/>
+            <xsd:element minOccurs="0" name="recordId" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_recordIdType"/>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_object_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCellsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCells_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rows_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataCells" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_object_dataCellsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_T_rowsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rows_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMap_T_TType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="aggregates" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_aggregatesType"/>
+            <xsd:element minOccurs="0" name="rows" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_T_rowsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="T!T" name="originalKeyName" type="xsd:string"/>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_factMapType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="T_T" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMap_T_TType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_groupingsAcross_groupingsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_groupingsAcrossType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="groupings" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_groupingsAcross_groupingsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_groupingsDown_groupingsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_groupingsDownType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="groupings" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_groupingsDown_groupingsType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_hasDetailRowsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_picklistColorsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="object" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNT_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNT_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNTType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNT_dataTypeType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNT_labelType"/>
+        </xsd:sequence>
+        <xsd:attribute default="s!AMOUNT" name="originalKeyName" type="xsd:string"/>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfoType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="s_AMOUNT" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfo_s_AMOUNTType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_availableDashboardSettingsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_entityNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_fieldNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_lookupEntityNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfoType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="entityName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_entityNameType"/>
+            <xsd:element minOccurs="0" name="fieldName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_fieldNameType"/>
+            <xsd:element minOccurs="0" name="lookupEntityName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfo_lookupEntityNameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_filterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fullyQualifiedNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAMEType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="fieldInfo" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fieldInfoType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_filterableType"/>
+            <xsd:element minOccurs="0" name="fullyQualifiedName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_fullyQualifiedNameType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAME_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_filterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_fullyQualifiedNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAMEType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_filterableType"/>
+            <xsd:element minOccurs="0" name="fullyQualifiedName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_fullyQualifiedNameType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAME_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_filterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_fullyQualifiedNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNTType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_filterableType"/>
+            <xsd:element minOccurs="0" name="fullyQualifiedName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_fullyQualifiedNameType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNT_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_apiNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="apiName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_apiNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_labelType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_object_nameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValues_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321Type">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_filterableType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_apiNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="apiName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_apiNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_labelType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_object_nameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValues_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007Type">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_filterableType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_apiNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="apiName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_apiNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_labelType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_object_nameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValues_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925Type">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_filterableType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_apiNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="apiName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_apiNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_labelType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_object_nameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValues_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551Type">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_filterableType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_dataTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_entityColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_apiNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="apiName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_apiNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_labelType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_object_nameType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValues_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_inactiveFilterValuesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_isLookupType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_uniqueCountableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246Type">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="dataType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_dataTypeType"/>
+            <xsd:element minOccurs="0" name="entityColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_entityColumnNameType"/>
+            <xsd:element minOccurs="0" name="filterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterValuesType"/>
+            <xsd:element minOccurs="0" name="filterable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_filterableType"/>
+            <xsd:element minOccurs="0" name="inactiveFilterValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_inactiveFilterValuesType"/>
+            <xsd:element minOccurs="0" name="isLookup" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_isLookupType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_labelType"/>
+            <xsd:element minOccurs="0" name="uniqueCountable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246_uniqueCountableType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfoType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ACCOUNT_NAME" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_ACCOUNT_NAMEType"/>
+            <xsd:element minOccurs="0" name="FULL_NAME" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_FULL_NAMEType"/>
+            <xsd:element minOccurs="0" name="AMOUNT" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_AMOUNTType"/>
+            <xsd:element minOccurs="0" name="BucketField_60142321" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_60142321Type"/>
+            <xsd:element minOccurs="0" name="BucketField_7401007" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_7401007Type"/>
+            <xsd:element minOccurs="0" name="BucketField_95780925" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95780925Type"/>
+            <xsd:element minOccurs="0" name="BucketField_1067551" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_1067551Type"/>
+            <xsd:element minOccurs="0" name="BucketField_95708246" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfo_BucketField_95708246Type"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadata_groupingColumnInfoType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="object" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportExtendedMetadataType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="aggregateColumnInfo" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_aggregateColumnInfoType"/>
+            <xsd:element minOccurs="0" name="availableDashboardSettings" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_availableDashboardSettingsType"/>
+            <xsd:element minOccurs="0" name="detailColumnInfo" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_detailColumnInfoType"/>
+            <xsd:element minOccurs="0" name="groupingColumnInfo" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadata_groupingColumnInfoType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_aggregates_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_aggregatesType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_aggregates_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_bucketTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_developerNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_nullTreatedAsZeroType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_otherBucketLabelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_sourceColumnNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_rangeUpperBoundType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_sourceDimensionValues_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_sourceDimensionValuesType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_sourceDimensionValues_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_labelType"/>
+            <xsd:element minOccurs="0" name="rangeUpperBound" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_rangeUpperBoundType"/>
+            <xsd:element minOccurs="0" name="sourceDimensionValues" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_object_sourceDimensionValuesType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_valuesType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_values_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_buckets_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="bucketType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_bucketTypeType"/>
+            <xsd:element minOccurs="0" name="developerName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_developerNameType"/>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_labelType"/>
+            <xsd:element minOccurs="0" name="nullTreatedAsZero" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_nullTreatedAsZeroType"/>
+            <xsd:element minOccurs="0" name="otherBucketLabel" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_otherBucketLabelType"/>
+            <xsd:element minOccurs="0" name="sourceColumnName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_sourceColumnNameType"/>
+            <xsd:element minOccurs="0" name="values" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_object_valuesType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_bucketsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_buckets_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_chartType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_crossFiltersType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_currencyType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_dashboardSettingType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_descriptionType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_detailColumns_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_detailColumnsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_detailColumns_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_developerNameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_divisionType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_folderIdType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_groupingsAcrossType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_groupingsDownType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_hasDetailRowsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_hasRecordCountType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_historicalSnapshotDatesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="length" type="xsd:byte"/>
+                <xsd:attribute default="array" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_idType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_presentationOptions_hasStackedSummariesType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_presentationOptionsType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="hasStackedSummaries" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_presentationOptions_hasStackedSummariesType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportBooleanFilterType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_columnType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_filterTypeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_isRunPageEditableType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_operatorType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="column" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_columnType"/>
+            <xsd:element minOccurs="0" name="filterType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_filterTypeType"/>
+            <xsd:element minOccurs="0" name="isRunPageEditable" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_isRunPageEditableType"/>
+            <xsd:element minOccurs="0" name="operator" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_operatorType"/>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_object_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFiltersType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFilters_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportFormatType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportType_labelType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportType_typeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_reportTypeType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="label" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportType_labelType"/>
+            <xsd:element minOccurs="0" name="type" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportType_typeType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_saveRoleHierarchyType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_scopeType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_showGrandTotalType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_showSubtotalsType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_sortBy_object_sortColumnType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_sortBy_object_sortOrderType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_sortBy_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sortColumn" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_sortBy_object_sortColumnType"/>
+            <xsd:element minOccurs="0" name="sortOrder" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_sortBy_object_sortOrderType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_sortByType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_sortBy_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_columnType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_durationValueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_endDateType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_startDateType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilterType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="column" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_columnType"/>
+            <xsd:element minOccurs="0" name="durationValue" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_durationValueType"/>
+            <xsd:element minOccurs="0" name="endDate" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_endDateType"/>
+            <xsd:element minOccurs="0" name="startDate" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilter_startDateType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_object_nameType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_object_valueType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_object_nameType"/>
+            <xsd:element minOccurs="0" name="value" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_object_valueType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_standardFiltersType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardFilters_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute name="length" type="xsd:byte"/>
+        <xsd:attribute default="array" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_supportsRoleHierarchyType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadata_userOrHierarchyFilterIdType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute default="string" name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_object_reportMetadataType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="aggregates" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_aggregatesType"/>
+            <xsd:element minOccurs="0" name="buckets" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_bucketsType"/>
+            <xsd:element minOccurs="0" name="chart" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_chartType"/>
+            <xsd:element minOccurs="0" name="crossFilters" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_crossFiltersType"/>
+            <xsd:element minOccurs="0" name="currency" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_currencyType"/>
+            <xsd:element minOccurs="0" name="dashboardSetting" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_dashboardSettingType"/>
+            <xsd:element minOccurs="0" name="description" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_descriptionType"/>
+            <xsd:element minOccurs="0" name="detailColumns" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_detailColumnsType"/>
+            <xsd:element minOccurs="0" name="developerName" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_developerNameType"/>
+            <xsd:element minOccurs="0" name="division" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_divisionType"/>
+            <xsd:element minOccurs="0" name="folderId" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_folderIdType"/>
+            <xsd:element minOccurs="0" name="groupingsAcross" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_groupingsAcrossType"/>
+            <xsd:element minOccurs="0" name="groupingsDown" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_groupingsDownType"/>
+            <xsd:element minOccurs="0" name="hasDetailRows" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_hasDetailRowsType"/>
+            <xsd:element minOccurs="0" name="hasRecordCount" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_hasRecordCountType"/>
+            <xsd:element minOccurs="0" name="historicalSnapshotDates" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_historicalSnapshotDatesType"/>
+            <xsd:element minOccurs="0" name="id" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_idType"/>
+            <xsd:element minOccurs="0" name="name" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_nameType"/>
+            <xsd:element minOccurs="0" name="presentationOptions" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_presentationOptionsType"/>
+            <xsd:element minOccurs="0" name="reportBooleanFilter" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportBooleanFilterType"/>
+            <xsd:element minOccurs="0" name="reportFilters" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFiltersType"/>
+            <xsd:element minOccurs="0" name="reportFormat" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportFormatType"/>
+            <xsd:element minOccurs="0" name="reportType" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_reportTypeType"/>
+            <xsd:element minOccurs="0" name="saveRoleHierarchy" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_saveRoleHierarchyType"/>
+            <xsd:element minOccurs="0" name="scope" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_scopeType"/>
+            <xsd:element minOccurs="0" name="showGrandTotal" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_showGrandTotalType"/>
+            <xsd:element minOccurs="0" name="showSubtotals" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_showSubtotalsType"/>
+            <xsd:element minOccurs="0" name="sortBy" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_sortByType"/>
+            <xsd:element minOccurs="0" name="standardDateFilter" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardDateFilterType"/>
+            <xsd:element minOccurs="0" name="standardFilters" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_standardFiltersType"/>
+            <xsd:element minOccurs="0" name="supportsRoleHierarchy" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_supportsRoleHierarchyType"/>
+            <xsd:element minOccurs="0" name="userOrHierarchyFilterId" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadata_userOrHierarchyFilterIdType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_object_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="attributes" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_attributesType"/>
+            <xsd:element minOccurs="0" name="allData" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_allDataType"/>
+            <xsd:element minOccurs="0" name="factMap" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_factMapType"/>
+            <xsd:element minOccurs="0" name="groupingsAcross" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_groupingsAcrossType"/>
+            <xsd:element minOccurs="0" name="groupingsDown" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_groupingsDownType"/>
+            <xsd:element minOccurs="0" name="hasDetailRows" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_hasDetailRowsType"/>
+            <xsd:element minOccurs="0" name="picklistColors" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_picklistColorsType"/>
+            <xsd:element minOccurs="0" name="reportExtendedMetadata" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportExtendedMetadataType"/>
+            <xsd:element minOccurs="0" name="reportMetadata" type="sample_aggrid_ns:HTTP_connector_getData_document_object_object_reportMetadataType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector_getData_document_objectType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_object_objectType"/>
+        </xsd:sequence>
+        <xsd:attribute default="object" name="type" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="HTTP_connector__getDataResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="object" type="sample_aggrid_ns:HTTP_connector_getData_document_objectType"/>
+            <xsd:element minOccurs="0" name="error" type="sample_aggrid_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="userReference" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="sample_aggrid_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="sample_aggrid_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,93 @@
+↓Call_Transaction [steps.TransactionStep-1683206802026]: 
+  sourceTransaction: sample_aggrid.HTTP_connector.getData
+↓JsonSource [steps.JsonSourceStep-1683206906791]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1683206802026
+        - java.lang.String: 
+          - ↑value: ./document/object/object/reportExtendedMetadata/detailColumnInfo
+  variableName: objectKeys
+↓rows [steps.JsonSourceStep-1683207807740]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1683206802026
+        - java.lang.String: 
+          - ↑value: ./document/object/object/factMap/T_T/rows
+  variableName: rows
+↓columnDef1 [steps.JsonArrayStep-1683207133806]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: columnDef
+  ↓jIterator [steps.SimpleIteratorStep-1683207058035]: 
+    expression: Object.keys(objectKeys)
+    ↓object [steps.JsonObjectStep-1683207452304]: 
+      ↓field1 [steps.JsonFieldStep-1683207475282]: 
+        key: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: PLAIN
+              - →→: headerName
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: JS
+              - →→: objectKeys[item]['entityColumnName']
+      ↓field [steps.JsonFieldStep-1683207077225]: 
+        value: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+            - SmartType: 
+              - ↑mode: JS
+              - →→: item
+↓columnDef [steps.JsonSourceStep-1683208153239]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1683207133806
+        - java.lang.String: 
+          - ↑value: .
+  variableName: columnDef
+↓rowData [steps.JsonArrayStep-1683208002524]: 
+  key: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: rowData
+  ↓jIterator [steps.SimpleIteratorStep-1683207995088]: 
+    expression: rows
+    ↓object [steps.JsonObjectStep-1683208276494]: 
+      key: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+          - SmartType: 
+            - ↑mode: PLAIN
+            - →→: row
+      ↓jIterator [steps.SimpleIteratorStep-1683208032836]: 
+        expression: item['dataCells']
+        ↓field [steps.JsonFieldStep-1683208475191]: 
+          key: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: JS
+                - →→: columnDef[index]['field']
+          value: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+              - SmartType: 
+                - ↑mode: JS
+                - →→: item['label']

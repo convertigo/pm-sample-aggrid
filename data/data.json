@@ -1,0 +1,554 @@
+{
+  "object": {
+      "attributes": {
+          "describeUrl": "/a url",
+          "instancesUrl": "/another url",
+          "reportId": "reportId",
+          "reportName": "reportName",
+          "type": "Report"
+      },
+      "allData": true,
+      "factMap": {
+          "T!T": {
+              "aggregates": [
+                  {
+                      "label": "$1,008,930.15",
+                      "value": 3008930.145
+                  }
+              ],
+              "rows": [
+                  {
+                      "dataCells": [
+                          {
+                              "label": "Acme Corp",
+                              "recordId": "KsAAJ",
+                              "value": "1OQAX"
+                          },
+                          {
+                              "label": "Ethan Presberg",
+                              "value": "RcQAK"
+                          },
+                          {
+                              "label": "$120,000.00",
+                              "value": {
+                                  "amount": 120000,
+                                  "currency": null
+                              }
+                          },
+                          {
+                              "label": "Healthy ☀️",
+                              "value": "Healthy ☀️"
+                          },
+                          {
+                              "label": "Promoter 🥳",
+                              "value": "Promoter 🥳"
+                          },
+                          {
+                              "label": "Very Unsatisfied🖤",
+                              "value": "Very Unsatisfied🖤"
+                          },
+                          {
+                              "label": "High 🟩",
+                              "value": "High 🟩"
+                          },
+                          {
+                              "label": "Strong 🌕",
+                              "value": "Strong 🌕"
+                          }
+                      ]
+                  },
+                  {
+                      "dataCells": [
+                          {
+                              "label": "EMP International Bank",
+                              "recordId": "b2pAAD",
+                              "value": "Vq6AAE"
+                          },
+                          {
+                              "label": "Olivier Picciotto",
+                              "value": "coPAAS"
+                          },
+                          {
+                              "label": "$22,687.00",
+                              "value": {
+                                  "amount": 22687,
+                                  "currency": null
+                              }
+                          },
+                          {
+                              "label": "Unhealthy 🌩",
+                              "value": "Unhealthy 🌩"
+                          },
+                          {
+                              "label": "Detractor 🤬",
+                              "value": "Detractor 🤬"
+                          },
+                          {
+                              "label": "Very Unsatisfied🖤",
+                              "value": "Very Unsatisfied🖤"
+                          },
+                          {
+                              "label": "Low 🟥",
+                              "value": "Low 🟥"
+                          },
+                          {
+                              "label": "Strong 🌕",
+                              "value": "Strong 🌕"
+                          }
+                      ]
+                  }
+              ]
+          }
+      },
+      "groupingsAcross": {
+          "groupings": []
+      },
+      "groupingsDown": {
+          "groupings": []
+      },
+      "hasDetailRows": true,
+      "picklistColors": {},
+      "reportExtendedMetadata": {
+          "aggregateColumnInfo": {
+              "s!AMOUNT": {
+                  "dataType": "currency",
+                  "label": "Sum of Amount"
+              }
+          },
+          "availableDashboardSettings": null,
+          "detailColumnInfo": {
+              "ACCOUNT_NAME": {
+                  "dataType": "string",
+                  "entityColumnName": "Account.Name",
+                  "fieldInfo": {
+                      "entityName": "Opportunity",
+                      "fieldName": "AccountId",
+                      "lookupEntityName": "Account"
+                  },
+                  "filterValues": [],
+                  "filterable": true,
+                  "fullyQualifiedName": "Opportunity.Account.Name",
+                  "inactiveFilterValues": [],
+                  "isLookup": true,
+                  "label": "Account Name",
+                  "uniqueCountable": true
+              },
+              "FULL_NAME": {
+                  "dataType": "string",
+                  "entityColumnName": "User.Name",
+                  "filterValues": [],
+                  "filterable": true,
+                  "fullyQualifiedName": "Opportunity.Owner.Name",
+                  "inactiveFilterValues": [],
+                  "isLookup": true,
+                  "label": "Opportunity Owner",
+                  "uniqueCountable": true
+              },
+              "AMOUNT": {
+                  "dataType": "currency",
+                  "entityColumnName": "Opportunity.Amount",
+                  "filterValues": [],
+                  "filterable": true,
+                  "fullyQualifiedName": "Opportunity.Amount",
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "Amount",
+                  "uniqueCountable": true
+              },
+              "BucketField_60142321": {
+                  "dataType": "string",
+                  "entityColumnName": "BucketField_60142321",
+                  "filterValues": [
+                      {
+                          "apiName": "Healthy ☀️",
+                          "label": "Healthy ☀️",
+                          "name": "Healthy ☀️"
+                      },
+                      {
+                          "apiName": "Neutral 🌥",
+                          "label": "Neutral 🌥",
+                          "name": "Neutral 🌥"
+                      },
+                      {
+                          "apiName": "Unhealthy 🌩",
+                          "label": "Unhealthy 🌩",
+                          "name": "Unhealthy 🌩"
+                      }
+                  ],
+                  "filterable": true,
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "CHS",
+                  "uniqueCountable": true
+              },
+              "BucketField_7401007": {
+                  "dataType": "string",
+                  "entityColumnName": "BucketField_7401007",
+                  "filterValues": [
+                      {
+                          "apiName": "Detractor 🤬",
+                          "label": "Detractor 🤬",
+                          "name": "Detractor 🤬"
+                      },
+                      {
+                          "apiName": "Passive 🤔",
+                          "label": "Passive 🤔",
+                          "name": "Passive 🤔"
+                      },
+                      {
+                          "apiName": "Promoter 🥳",
+                          "label": "Promoter 🥳",
+                          "name": "Promoter 🥳"
+                      }
+                  ],
+                  "filterable": true,
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "Net Promoter Score",
+                  "uniqueCountable": true
+              },
+              "BucketField_95780925": {
+                  "dataType": "string",
+                  "entityColumnName": "BucketField_95780925",
+                  "filterValues": [
+                      {
+                          "apiName": "Very Unsatisfied🖤",
+                          "label": "Very Unsatisfied🖤",
+                          "name": "Very Unsatisfied🖤"
+                      },
+                      {
+                          "apiName": "Unsatisfied ❤️",
+                          "label": "Unsatisfied ❤️",
+                          "name": "Unsatisfied ❤️"
+                      },
+                      {
+                          "apiName": "Neutral 💙",
+                          "label": "Neutral 💙",
+                          "name": "Neutral 💙"
+                      },
+                      {
+                          "apiName": "Satisfied 💛",
+                          "label": "Satisfied 💛",
+                          "name": "Satisfied 💛"
+                      },
+                      {
+                          "apiName": "Very Satisfied 💚",
+                          "label": "Very Satisfied 💚",
+                          "name": "Very Satisfied 💚"
+                      }
+                  ],
+                  "filterable": true,
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "Customer Satisfaction Score",
+                  "uniqueCountable": true
+              },
+              "BucketField_1067551": {
+                  "dataType": "string",
+                  "entityColumnName": "BucketField_1067551",
+                  "filterValues": [
+                      {
+                          "apiName": "Low 🟥",
+                          "label": "Low 🟥",
+                          "name": "Low 🟥"
+                      },
+                      {
+                          "apiName": "Average 🟨",
+                          "label": "Average 🟨",
+                          "name": "Average 🟨"
+                      },
+                      {
+                          "apiName": "High 🟩",
+                          "label": "High 🟩",
+                          "name": "High 🟩"
+                      }
+                  ],
+                  "filterable": true,
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "Value To Customer",
+                  "uniqueCountable": true
+              },
+              "BucketField_95708246": {
+                  "dataType": "string",
+                  "entityColumnName": "BucketField_95708246",
+                  "filterValues": [
+                      {
+                          "apiName": "Weak  🌑",
+                          "label": "Weak  🌑",
+                          "name": "Weak  🌑"
+                      },
+                      {
+                          "apiName": "Moderate 🌓",
+                          "label": "Moderate 🌓",
+                          "name": "Moderate 🌓"
+                      },
+                      {
+                          "apiName": "Strong 🌕",
+                          "label": "Strong 🌕",
+                          "name": "Strong 🌕"
+                      }
+                  ],
+                  "filterable": true,
+                  "inactiveFilterValues": [],
+                  "isLookup": false,
+                  "label": "Relationship with Customer",
+                  "uniqueCountable": true
+              }
+          },
+          "groupingColumnInfo": {}
+      },
+      "reportMetadata": {
+          "aggregates": [
+              "s!AMOUNT"
+          ],
+          "buckets": [
+              {
+                  "bucketType": "text",
+                  "developerName": "BucketField_60142321",
+                  "label": "CHS",
+                  "nullTreatedAsZero": false,
+                  "otherBucketLabel": null,
+                  "sourceColumnName": "Account.Customer_Health_Score__c",
+                  "values": [
+                      {
+                          "label": "Healthy ☀️",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_green.gif_IM2_Yellow Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "Neutral 🌥",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_yellow.gif_IM2_Yellow Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "Unhealthy 🌩",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_red.gif_IM2_Yellow Flag_IM3_"
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "bucketType": "number",
+                  "developerName": "BucketField_95780925",
+                  "label": "Customer Satisfaction Score",
+                  "nullTreatedAsZero": true,
+                  "otherBucketLabel": null,
+                  "sourceColumnName": "Account.CSAT_Score__c",
+                  "values": [
+                      {
+                          "label": "Very Unsatisfied🖤",
+                          "rangeUpperBound": 20,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Unsatisfied ❤️",
+                          "rangeUpperBound": 39,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Neutral 💙",
+                          "rangeUpperBound": 59,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Satisfied 💛",
+                          "rangeUpperBound": 79,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Very Satisfied 💚",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": null
+                      }
+                  ]
+              },
+              {
+                  "bucketType": "number",
+                  "developerName": "BucketField_7401007",
+                  "label": "Net Promoter Score",
+                  "nullTreatedAsZero": true,
+                  "otherBucketLabel": null,
+                  "sourceColumnName": "Account.NPS_Score__c",
+                  "values": [
+                      {
+                          "label": "Detractor 🤬",
+                          "rangeUpperBound": 6,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Passive 🤔",
+                          "rangeUpperBound": 8,
+                          "sourceDimensionValues": null
+                      },
+                      {
+                          "label": "Promoter 🥳",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": null
+                      }
+                  ]
+              },
+              {
+                  "bucketType": "text",
+                  "developerName": "BucketField_95708246",
+                  "label": "Relationship with Customer",
+                  "nullTreatedAsZero": false,
+                  "otherBucketLabel": null,
+                  "sourceColumnName": "Account.Relationship__c",
+                  "values": [
+                      {
+                          "label": "Weak  🌑",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_red.gif_IM2_Red Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "Moderate 🌓",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_yellow.gif_IM2_Yellow Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "Strong 🌕",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_green.gif_IM2_Green Flag_IM3_"
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "bucketType": "text",
+                  "developerName": "BucketField_1067551",
+                  "label": "Value To Customer",
+                  "nullTreatedAsZero": false,
+                  "otherBucketLabel": null,
+                  "sourceColumnName": "Account.Value__c",
+                  "values": [
+                      {
+                          "label": "Low 🟥",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_red.gif_IM2_Red Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "Average 🟨",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_yellow.gif_IM2_Yellow Flag_IM3_"
+                          ]
+                      },
+                      {
+                          "label": "High 🟩",
+                          "rangeUpperBound": null,
+                          "sourceDimensionValues": [
+                              "_IM1_/img/samples/flag_green.gif_IM2_Green Flag_IM3_"
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "chart": null,
+          "crossFilters": [],
+          "currency": null,
+          "dashboardSetting": null,
+          "description": null,
+          "detailColumns": [
+              "ACCOUNT_NAME",
+              "FULL_NAME",
+              "AMOUNT",
+              "BucketField_60142321",
+              "BucketField_7401007",
+              "BucketField_95780925",
+              "BucketField_1067551",
+              "BucketField_95708246"
+          ],
+          "developerName": "reportName_g8l",
+          "division": null,
+          "folderId": "0053s000003KF8UAAW",
+          "groupingsAcross": [],
+          "groupingsDown": [],
+          "hasDetailRows": true,
+          "hasRecordCount": false,
+          "historicalSnapshotDates": [],
+          "id": "tsEAE",
+          "name": "reportName",
+          "presentationOptions": {
+              "hasStackedSummaries": true
+          },
+          "reportBooleanFilter": "1 AND (2 OR 3) AND 4",
+          "reportFilters": [
+              {
+                  "column": "TYPE",
+                  "filterType": "fieldValue",
+                  "isRunPageEditable": true,
+                  "operator": "equals",
+                  "value": "Renewal"
+              },
+              {
+                  "column": "Account.NPS_Score__c",
+                  "filterType": "fieldValue",
+                  "isRunPageEditable": true,
+                  "operator": "greaterThan",
+                  "value": "0.00"
+              },
+              {
+                  "column": "Account.CSAT_Score__c",
+                  "filterType": "fieldValue",
+                  "isRunPageEditable": true,
+                  "operator": "greaterThan",
+                  "value": "0"
+              },
+              {
+                  "column": "STAGE_NAME",
+                  "filterType": "fieldValue",
+                  "isRunPageEditable": true,
+                  "operator": "notEqual",
+                  "value": "Closed Won,Closed Lost"
+              }
+          ],
+          "reportFormat": "TABULAR",
+          "reportType": {
+              "label": "Opportunities",
+              "type": "Opportunity"
+          },
+          "saveRoleHierarchy": true,
+          "scope": "organization",
+          "showGrandTotal": false,
+          "showSubtotals": false,
+          "sortBy": [
+              {
+                  "sortColumn": "AMOUNT",
+                  "sortOrder": "Desc"
+              }
+          ],
+          "standardDateFilter": {
+              "column": "CREATED_DATE",
+              "durationValue": "CUSTOM",
+              "endDate": null,
+              "startDate": null
+          },
+          "standardFilters": [
+              {
+                  "name": "open",
+                  "value": "all"
+              },
+              {
+                  "name": "probability",
+                  "value": ">0"
+              }
+          ],
+          "supportsRoleHierarchy": true,
+          "userOrHierarchyFilterId": null
+      }
+  }
+}

@@ -2,7 +2,11 @@
 ↓sample_aggrid [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
+  ↓HTTP_connector [connectors.HttpConnector]: 🗏 connectors/HTTP_connector.yaml
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓getData [sequences.GenericSequence]: 🗏 sequences/getData.yaml
+  ↓lib_ExtendedComponents_ui_ngx_reference [references.ProjectSchemaReference]: 
+    projectName: lib_ExtendedComponents_ui_ngx=https://github.com/convertigo/c8oprj-lib-extended-components-ui-ngx.git:branch=8.0.0.1
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_1_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_1_0_ngx.zip

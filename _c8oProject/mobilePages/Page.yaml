@@ -60,6 +60,134 @@ title: First page
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓UseSharedComponent [ngx.components.UIUseShared-1683208562356]: 
+    sharedcomponent: lib_ExtendedComponents_ui_ngx.MobileApplication.Application.agGrid
+    ↓pagination [ngx.components.UIUseVariable-1683208596805]: 
+      comment: 'boolean: true (default) or false'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:true
+    ↓paginationPageSize [ngx.components.UIUseVariable-1683208596807]: 
+      comment: 'integer: 10 by default'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:10
+    ↓rowSelection [ngx.components.UIUseVariable-1683208596809]: 
+      comment: 'string: ''single'' (default) or ''multiple'''
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'single'
+    ↓rowDeselection [ngx.components.UIUseVariable-1683208596811]: 
+      comment: 'boolean: true (default) or false'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:true
+    ↓defaultColDef [ngx.components.UIUseVariable-1683208596813]: 
+      comment: 'default is {hide: false, editable: true, sortable: true, resizable: true, filter: true, checkboxSelection: false, singleClickEdit: false}'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: 'script:{hide: false, editable: true, sortable: true, resizable: true, filter: true, checkboxSelection: false, singleClickEdit: false}'
+    ↓columnDefs [ngx.components.UIUseVariable-1683208596815]: 
+      comment: 'Array of columnDef {headerName: ''headerName'', field: ''fieldName''} objects'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"sample_aggrid","input":"","model":{"data":[{"sequence":"sample_aggrid.getData","marker":""}],"path":"?.columnDef","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓rowData [ngx.components.UIUseVariable-1683208596817]: 
+      comment: 'Array of row { fieldName1: ''value1'', fieldName2: ''value2'', fieldName3: true, ...} objects'
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"sample_aggrid","input":"","model":{"data":[{"sequence":"sample_aggrid.getData","marker":""}],"path":"?.rowData","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓width [ngx.components.UIUseVariable-1683208596819]: 
+      comment: width value in % or px
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'100%'
+    ↓height [ngx.components.UIUseVariable-1683208596821]: 
+      comment: height is 'auto' or value in % or px
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'auto'
+    ↓class [ngx.components.UIUseVariable-1683208596823]: 
+      comment: |
+        'One of the themes provided here :
+        
+        https://www.ag-grid.com/javascript-grid-themes-provided/
+        
+        Also be shure to add the theme in the Theme object as :
+        
+        @import "../../node_modules/ag-grid-community/dist/styles/ag-theme-balham-dark/sass/ag-theme-balham-dark.scss";
+        
+        
+        
+        '
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'ag-theme-balham'
+    ↓id [ngx.components.UIUseVariable-1683208596825]: 
+      comment: An Optional ID
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓suppressCellSelection [ngx.components.UIUseVariable-1683208596827]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:false
+    ↓suppressRowClickSelection [ngx.components.UIUseVariable-1683208596829]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:false
+    ↓overlayLoadingTemplate [ngx.components.UIUseVariable-1683208596831]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓overlayNoRowsTemplate [ngx.components.UIUseVariable-1683208596833]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓rowHeight [ngx.components.UIUseVariable-1683208596835]: 
+      comment: Height of the row in pixels as a string
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'25'
+    ↓wrapperClass [ngx.components.UIUseVariable-1683208596837]: 
+      comment: Height of the row in pixels as a string
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓rowModelType [ngx.components.UIUseVariable-1683208596839]: 
+      comment: Row model type
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'clientSide'
+    ↓maxBlocksInCache [ngx.components.UIUseVariable-1683208596841]: 
+      comment: How many blocks to keep in the store. Default is no limit, so every requested block is kept
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓autoSizeColumns [ngx.components.UIUseVariable-1683208596843]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:true
 ↓Footer [ngx.components.UIDynamicElement-1491634242460]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
@@ -89,3 +217,6 @@ title: First page
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1683208571794]: 
+  ↓CallSequence [ngx.components.UIDynamicAction-1683208577064]: 
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:sample_aggrid.getData"}'
